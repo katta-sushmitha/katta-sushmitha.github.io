@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sushmitha K | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,114 +12,147 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      overflow-x: hidden;
-      font-family: 'Courier New', monospace;
-      background-color: #f8f8f8;
+    html {
       scroll-behavior: smooth;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      width: 200vw; /* Two screens: intro + portfolio */
-      height: 100vh;
-    }
-
-    .section {
-      flex: 0 0 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
-    }
-
-    .intro {
+    body {
+      font-family: 'Courier New', monospace;
       background-color: #fdfdfd;
       color: #222;
-    }
-
-    .intro h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-
-    .intro p {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 30px;
-    }
-
-    .arrow {
-      font-size: 2.5rem;
-      animation: bounce 1.5s infinite;
-      cursor: pointer;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(10px); }
-    }
-
-    .portfolio {
-      background-color: #ffffff;
-      color: #2e2e2e;
-      overflow-y: auto;
-      padding: 2rem;
-      width: 100%;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 1rem;
-      padding-bottom: 0.3rem;
-    }
-
-    section p, section li {
-      font-size: 1rem;
       line-height: 1.6;
     }
 
     nav {
-      width: 100%;
-      background-color: #222;
-      padding: 1rem;
+      background: #111;
       color: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 999;
       display: flex;
       justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
       color: #fff;
+      margin-left: 1.2rem;
       text-decoration: none;
-      margin-left: 1rem;
       font-weight: bold;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #ffd700;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.8rem;
+      color: #555;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #c71585;
+    }
+
+    blockquote {
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #999;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    .intro-screen {
+      height: 100vh;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .intro-screen h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-screen p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .arrow-link {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      display: inline-block;
+      animation: bounce 1.5s infinite;
+      text-decoration: none;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-
-  <!-- 👋 Intro Section -->
-  <section class="section intro" id="welcome">
+  <!-- 👋 Intro Screen -->
+  <div class="intro-screen">
     <h1>👋 Hey there!</h1>
     <p>Welcome to my personal portfolio</p>
-    <a href="#portfolio" class="arrow">➡️</a>
-  </section>
+    <a href="#main-content" class="arrow-link">⬇️</a>
+  </div>
 
-  <!-- 📂 Main Portfolio Content -->
-  <section class="section portfolio" id="portfolio">
+  <!-- Main Portfolio -->
+  <div id="main-content">
     <nav>
       <div><strong>Sushmitha</strong></div>
       <div>
@@ -134,13 +167,16 @@
     </nav>
 
     <header>
-      <h1 style="font-size: 3rem;">👩‍💼 Sushmitha K</h1>
+      <h1>👩‍💼 Sushmitha K</h1>
       <p>Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
     </header>
 
     <section id="about">
       <h2>📍 About Me</h2>
-      <p>Hello! I'm Sushmitha, a creatively-driven project coordinator and content specialist with a flair for precision. From data annotation to full-cycle project management, I've led cross-cultural teams and delivered polished outcomes under pressure.</p>
+      <p>Hello! I'm Sushmitha, a creatively-driven project coordinator and content specialist.  
+         From data annotation to full-cycle project execution, I've led remote teams and managed timelines.  
+         Nicknamed <strong>“Ms. Busy Pen”</strong> during my content writing internship for my punctuality! ✍️
+      </p>
     </section>
 
     <section id="skills">
@@ -163,13 +199,18 @@
     <section id="blogs">
       <h2>📝 Blogs</h2>
       <ul>
-        <li><a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Self Confidence</a></li>
+        <li><a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">✨ Self Confidence</a></li>
       </ul>
     </section>
 
     <section id="reviews">
       <h2>🌟 Feedback & Reviews</h2>
-      <blockquote>“Sushmitha displayed exceptional leadership and coordination.”</blockquote>
+      <blockquote>
+        “Sushmitha displayed exceptional leadership and coordination.” — Internship Manager
+      </blockquote>
+      <blockquote>
+        “4⭐ Team Lead across two internships. Nicknamed ‘Ms. Busy Pen’.” — Project Guide
+      </blockquote>
     </section>
 
     <section id="certifications">
@@ -183,18 +224,16 @@
     <section id="contact">
       <h2>📬 Contact</h2>
       <p>
-        <a href="mailto:kattasushmitha13@gmail.com">📧 Email</a> |
-        <a href="https://www.linkedin.com/in/katta-sushmitha" target="_blank">🔗 LinkedIn</a> |
-        <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
+        📧 <a href="mailto:kattasushmitha13@gmail.com">Email Me</a><br/>
+        🔗 <a href="https://www.linkedin.com/in/katta-sushmitha" target="_blank">LinkedIn</a><br/>
+        ❓ <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">Quora</a>
       </p>
     </section>
 
     <footer>
-      <p style="text-align:center; margin-top: 3rem;">© 2025 Sushmitha K • Made with 💻 on GitHub Pages</p>
+      <p>© 2025 Sushmitha K • Built with 💻 & ☕ on GitHub Pages</p>
     </footer>
-  </section>
-
-</div>
+  </div>
 
 </body>
 </html>
