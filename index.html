@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sushmitha K | Project Manager Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushmitha K | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     html {
@@ -13,7 +13,7 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #fdfdfd;
       color: #333;
     }
     nav {
@@ -32,6 +32,9 @@
       text-decoration: none;
       margin-left: 1rem;
       font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       padding: 3rem 1rem;
@@ -67,10 +70,6 @@
       margin: 0 1rem;
       font-size: 1.5rem;
       color: #1976d2;
-      text-decoration: none;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -78,8 +77,20 @@
       background-color: #f0f0f0;
       margin-top: 2rem;
     }
+    .contact-link {
+      color: #0d47a1;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .contact-link:hover {
+      color: #1565c0;
+      border-bottom: 2px solid #1565c0;
+      font-weight: 600;
+    }
   </style>
 </head>
+
 <body>
   <nav>
     <div><strong>Sushmitha K</strong></div>
@@ -136,13 +147,14 @@
     <p>I’m Sushmitha K, a project management enthusiast with hands-on experience in remote collaboration, annotation precision, and content creation. I lead diverse teams, structure workflows, and translate chaos into clarity.</p>
   </section>
 
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:kattasushmitha13@gmail.com">kattasushmitha13@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/katta-sushmitha/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
-    </div>
+  <section id="contact" class="section">
+    <h2>📬 Contact Me</h2>
+    <p>You can reach out to me via any of the following:</p>
+    <ul style="list-style: none; padding-left: 0; font-size: 1.1rem; line-height: 2;">
+      <li>📧 <a href="mailto:kattasushmitha13@gmail.com" class="contact-link">kattasushmitha13@gmail.com</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/katta-sushmitha" class="contact-link" target="_blank">linkedin.com/in/katta-sushmitha</a></li>
+      <li>❓ <a href="https://www.quora.com/profile/Katta-sushmitha-2" class="contact-link" target="_blank">quora.com/profile/Katta-sushmitha-2</a></li>
+    </ul>
   </section>
 
   <footer>
