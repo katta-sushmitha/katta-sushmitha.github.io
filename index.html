@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sushmitha's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | Sushmitha Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -12,80 +11,94 @@
       box-sizing: border-box;
     }
 
-    html {
+    html, body {
+      overflow: hidden;
+      font-family: 'Courier New', monospace;
+      background-color: #f8f8f8;
       scroll-behavior: smooth;
     }
 
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #f7f7f7;
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 200vw; /* Two screens: intro + portfolio */
+      height: 100vh;
     }
 
-    /* 👋 Splash Section */
-    #intro {
+    .section {
+      flex: 0 0 100vw;
       height: 100vh;
-      background-color: #fafafa;
-      color: #333;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
+      align-items: center;
+      padding: 40px;
     }
 
-    #intro h1 {
-      font-size: 2.4rem;
+    .intro {
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    .intro h1 {
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
 
-    #intro .wave {
-      display: inline-block;
-      animation: waveAnim 2s infinite;
-      transform-origin: 70% 70%;
-    }
-
-    @keyframes waveAnim {
-      0% { transform: rotate(0deg); }
-      15% { transform: rotate(14deg); }
-      30% { transform: rotate(-8deg); }
-      45% { transform: rotate(14deg); }
-      60% { transform: rotate(-4deg); }
-      75% { transform: rotate(10deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    #intro p {
-      font-size: 1rem;
-      color: #555;
+    .intro p {
+      font-size: 1.1rem;
+      color: #666;
       margin-bottom: 30px;
     }
 
-    .down-arrow {
-      font-size: 2rem;
-      color: #888;
+    .arrow {
+      font-size: 2.5rem;
+      animation: bounce 1.5s infinite;
       cursor: pointer;
-      transition: transform 0.3s ease;
     }
 
-    .down-arrow:hover {
-      transform: translateY(5px);
+    @keyframes bounce {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(10px); }
     }
 
-    /* 🔽 Scroll target placeholder */
-    #main-content {
-      padding-top: 60px;
+    /* Placeholder for portfolio */
+    .portfolio {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
 <body>
 
-<!-- 👋 Splash Intro Section -->
-<section id="intro">
-  <h1><span class="wave">👋</span> Hey there!</h1>
-  <p>Welcome to my personal portfolio</p>
-  <a href="#main-content" class="down-arrow">⬇️</a>
-</section>
+<div class="container">
+
+  <!-- 👋 Intro Section -->
+  <section class="section intro" id="welcome">
+    <h1>👋 Hey there!</h1>
+    <p>Welcome to my personal portfolio</p>
+    <a href="#portfolio" class="arrow">➡️</a>
+  </section>
+
+  <!-- 📂 Placeholder for the main portfolio content -->
+  <section class="section portfolio" id="portfolio">
+    Portfolio starts here (paste your existing content here).
+  </section>
+
+</div>
+
+</body>
+</html>
+
 
 <!-- 🔽 Portfolio Starts Here -->
 <section id="main-content">
