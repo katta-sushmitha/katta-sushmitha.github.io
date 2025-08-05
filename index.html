@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome | Sushmitha Portfolio</title>
+  <title>Sushmitha K | Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -12,7 +13,7 @@
     }
 
     html, body {
-      overflow: hidden;
+      overflow-x: hidden;
       font-family: 'Courier New', monospace;
       background-color: #f8f8f8;
       scroll-behavior: smooth;
@@ -62,19 +63,47 @@
       50% { transform: translateX(10px); }
     }
 
-    /* Placeholder for portfolio */
     .portfolio {
       background-color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #888;
-      font-size: 1.5rem;
+      color: #2e2e2e;
+      overflow-y: auto;
+      padding: 2rem;
+      width: 100%;
     }
 
-    a {
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+    }
+
+    section p, section li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #222;
+      padding: 1rem;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: #fff;
       text-decoration: none;
-      color: inherit;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -89,275 +118,83 @@
     <a href="#portfolio" class="arrow">➡️</a>
   </section>
 
-  <!-- 📂 Placeholder for the main portfolio content -->
+  <!-- 📂 Main Portfolio Content -->
   <section class="section portfolio" id="portfolio">
-    Portfolio starts here (paste your existing content here).
+    <nav>
+      <div><strong>Sushmitha</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1 style="font-size: 3rem;">👩‍💼 Sushmitha K</h1>
+      <p>Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
+    </header>
+
+    <section id="about">
+      <h2>📍 About Me</h2>
+      <p>Hello! I'm Sushmitha, a creatively-driven project coordinator and content specialist with a flair for precision. From data annotation to full-cycle project management, I've led cross-cultural teams and delivered polished outcomes under pressure.</p>
+    </section>
+
+    <section id="skills">
+      <h2>🛠️ Core Skills</h2>
+      <ul>
+        <li><strong>Project Tools:</strong> ClickUp, Notion, Trello, Excel</li>
+        <li><strong>Writing:</strong> SEO, Technical, Academic</li>
+        <li><strong>Annotation:</strong> Label Studio, CVAT</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>📂 Projects</h2>
+      <ul>
+        <li><a href="https://github.com/katta-sushmitha/Writing-coursework" target="_blank">📘 Writing Coursework</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1uXcl4NNlSeSL-UEu-EvtEiH02pYv2-0W?usp=drive_link" target="_blank">📁 Internship Deliverables</a></li>
+      </ul>
+    </section>
+
+    <section id="blogs">
+      <h2>📝 Blogs</h2>
+      <ul>
+        <li><a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Self Confidence</a></li>
+      </ul>
+    </section>
+
+    <section id="reviews">
+      <h2>🌟 Feedback & Reviews</h2>
+      <blockquote>“Sushmitha displayed exceptional leadership and coordination.”</blockquote>
+    </section>
+
+    <section id="certifications">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1rCKw9cKi5eZxQNWk9eH5T0Q_GVu0h7nW/view?usp=drive_link" target="_blank">Early Internship</a></li>
+        <li><a href="https://coursera.org/verify/XYZ" target="_blank">Google PM - Coursera</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>
+        <a href="mailto:kattasushmitha13@gmail.com">📧 Email</a> |
+        <a href="https://www.linkedin.com/in/katta-sushmitha" target="_blank">🔗 LinkedIn</a> |
+        <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
+      </p>
+    </section>
+
+    <footer>
+      <p style="text-align:center; margin-top: 3rem;">© 2025 Sushmitha K • Made with 💻 on GitHub Pages</p>
+    </footer>
   </section>
 
 </div>
 
-</body>
-</html>
-
-<!-- 🔽 Portfolio Starts Here -->
-<section id="main-content">
-  <!-- Your existing portfolio code begins below this -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sushmitha K | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #f4f4f4;
-      color: #2e2e2e;
-      line-height: 1.6;
-    }
-    nav {
-      background: #222;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    header {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #eaeaea;
-    }
-    header h1 {
-      font-size: 3.2rem;
-      font-weight: bold;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 2rem;
-    }
-    h2 {
-      font-size: 2rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 1rem;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-    }
-    ul li {
-      margin-bottom: 0.6rem;
-    }
-    a {
-      color: #1a0dab;
-    }
-    a:hover {
-      color: #c71585;
-    }
-    blockquote {
-      margin: 1rem 0;
-      padding-left: 1rem;
-      border-left: 4px solid #999;
-      font-style: italic;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #ddd;
-      margin-top: 4rem;
-    }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      font-size: 1.1rem;
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <div><strong>Sushmitha</strong></div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <header>
-    <h1>👩‍💼 Sushmitha K</h1>
-    <p>Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
-  </header>
-
-  <section id="about">
-    <h2>📍 About Me</h2>
-    <p>
-      Hello! I'm Sushmitha, a creatively-driven project coordinator and content specialist with a flair for precision.  
-      From data annotation to full-cycle project management, I've led cross-cultural teams and delivered polished outcomes under pressure.  
-      I value clarity, structure, and timeliness—and was even nicknamed <strong>“Ms. Busy Pen”</strong> during my content internship  
-      for my punctuality and polished drafts. 💼✍️
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>🛠️ Core Skills</h2>
-    <ul>
-      <li><strong>Project Management Tools:</strong> ClickUp, Notion, Trello, Excel</li>
-      <li><strong>Planning & Coordination:</strong> Gantt Charts, Team Charters, Severity Matrix</li>
-      <li><strong>Annotation & Evaluation:</strong> Label Studio, CVAT, NER, QA Tagging</li>
-      <li><strong>Creative Writing:</strong> SEO Blogs, Technical Docs, Academic Content</li>
-      <li><strong>Soft Skills:</strong> Time-zone collaboration, Documentation, Leadership</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>📂 Projects</h2>
-    <ul>
-      <li><a href="https://www.notion.so/Personal-Project-Management-Template-Sushmitha-K-b401b180eb6146618a5a245fdfef7da5" target="_blank">🧠 Notion – Project Management Tracker</a></li>
-      <li><a href="https://drive.google.com/drive/folders/1uXcl4NNlSeSL-UEu-EvtEiH02pYv2-0W?usp=drive_link" target="_blank">📁 Internship Deliverables (Google Drive)</a></li>
-      <li><a href="https://drive.google.com/drive/folders/19bClVWw0yIOFxorPMTwu4BiabaJBEOXR?usp=drive_link" target="_blank">📊 ClickUp Dashboard Screenshots</a></li>
-      <li><a href="https://github.com/katta-sushmitha/Writing-coursework" target="_blank">📝 Writing Coursework Repository</a></li>
-    </ul>
-  </section>
-<!-- 📢 Internship Feedback & Evaluations -->
-<section id="feedback" class="section" style="font-family: 'Courier New', monospace; background-color: #fdfdfd; padding: 40px 20px;">
-  <h2 style="font-size: 1.8rem; color: #222; text-align: center; margin-bottom: 10px;">📢 Internship Feedback & Evaluations</h2>
-  <p style="text-align: center; font-size: 1rem; color: #555; max-width: 700px; margin: 0 auto 40px;">
-    Insights from my journey as a <strong>4⭐ rated team lead</strong> across two remote project management internships.
-  </p>
-
-  <div class="feedback-section" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-    <!-- Early Internship -->
-    <div class="feedback-box" style="background-color: #f6f6f6; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-      <h3 style="margin-top: 0; font-size: 1.2rem; color: #444;">🟢 Early Internship</h3>
-      <p style="font-size: 0.95rem; color: #333;">
-        Led a multi-timezone team. Delivered risk registers, team charters, and final presentations through collaborative tools.
-      </p>
-      <a href="https://drive.google.com/drive/folders/1Mu8BSTuc3zw1gKsmomBu5-Py4Gu2KkFV?usp=drive_link" target="_blank" style="display: flex; align-items: center; margin-top: 10px; text-decoration: none; color: #3a74d8; font-weight: bold;">
-        <img src="https://img.icons8.com/fluency/48/folder-invoices.png" alt="Folder Icon" style="margin-right: 8px;" />
-        View Folder
-      </a>
-    </div>
-
-    <!-- Associate Internship -->
-    <div class="feedback-box" style="background-color: #f6f6f6; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-      <h3 style="margin-top: 0; font-size: 1.2rem; color: #444;">🟣 Associate Internship</h3>
-      <p style="font-size: 0.95rem; color: #333;">
-        Team lead for a 5-member group. Managed ClickUp dashboards, tool evaluations, and presented a final WBS breakdown.
-      </p>
-      <a href="https://drive.google.com/drive/folders/1hCA445_pZzDS6vSg2NBVYiTr7wTh0T_w?usp=drive_link" target="_blank" style="display: flex; align-items: center; margin-top: 10px; text-decoration: none; color: #3a74d8; font-weight: bold;">
-        <img src="https://img.icons8.com/fluency/48/folder-invoices.png" alt="Folder Icon" style="margin-right: 8px;" />
-        View Folder
-      </a>
-    </div>
-  </div>
-</section>
-
-  <section id="blogs">
-    <h2>📝 Published Articles</h2>
-    <ul>
-      <li><a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Most Viewed: Self Confidence – A Developing Attitude</a></li>
-      <li><a href="https://www.inspirationalmonster.com/post/becoming-an-entrepreneur-101" target="_blank">Becoming an Entrepreneur</a></li>
-      <li><a href="https://www.inspirationalmonster.com/post/marketing-an-overview-from-the-very-beginning" target="_blank">Marketing – From the Beginning</a></li>
-      <li><a href="https://www.inspirationalmonster.com/post/the-metaverse-all-you-need-to-know-about-it" target="_blank">The Metaverse – All You Need to Know</a></li>
-      <li><a href="https://www.inspirationalmonster.com/post/metaverse-and-business" target="_blank">Metaverse and Business</a></li>
-    </ul>
-  </section>
-
-  <section id="reviews">
-    <h2>🌟 Feedback & Reviews</h2>
-    <blockquote>
-      “Sushmitha displayed exceptional leadership and coordination across a diverse team. Her attention to detail and commitment to timelines is commendable.” — Internship Manager
-    </blockquote>
-    <blockquote>
-      “Her ability to manage tools like ClickUp and Notion while delivering high-quality content made her a standout intern.” — Associate Project Guide
-    </blockquote>
-    <blockquote>
-      “Earned 4 star ratings in both project management internships. 
-      Nicknamed ‘Ms. Busy Pen’ for her punctual content submissions.” — Content Internship Feedback
-    </blockquote>
-  </section>
-<!-- 📜 Certifications Section with Thumbnails -->
-<section id="certifications" class="section" style="font-family: 'Courier New', monospace; background-color: #fdfdfd; padding: 40px 20px;">
-  <h2 style="font-size: 1.8rem; color: #222; text-align: center; margin-bottom: 10px;">📜 Certifications</h2>
-  <p style="text-align: center; font-size: 1rem; color: #555; max-width: 700px; margin: 0 auto 40px;">
-    Recognized as a <strong>4⭐ rated team lead</strong> during two remote project management internships.
-  </p>
-
-  <div class="cert-section" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-    <!-- 🟢 Early Internship Certificate -->
-    <div class="cert-box" style="background-color: #f6f6f6; padding: 20px; border-radius: 8px; width: 320px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-      <h3 style="margin-top: 0; font-size: 1.2rem; color: #444;">🟢 Early Internship</h3>
-      <p style="font-size: 0.95rem; color: #333;">
-        PM Intern | Multi-timezone team | Weekly deliverables & stakeholder reporting.
-      </p>
-      <a href="https://drive.google.com/file/d/1rCKw9cKi5eZxQNWk9eH5T0Q_GVu0h7nW/view?usp=drive_link" target="_blank" style="display: block; margin-top: 10px; text-align: center;">
-        <img src="YOUR_EARLY_THUMBNAIL_LINK" alt="Early Internship Certificate" style="width: 100%; border-radius: 4px; box-shadow: 0 0 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"/>
-        <p style="color: #3a74d8; font-weight: bold; margin-top: 8px;">View Certificate</p>
-      </a>
-    </div>
-
-    <!-- 🟣 Associate Internship Certificate -->
-    <div class="cert-box" style="background-color: #f6f6f6; padding: 20px; border-radius: 8px; width: 320px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
-      <h3 style="margin-top: 0; font-size: 1.2rem; color: #444;">🟣 Associate Internship</h3>
-      <p style="font-size: 0.95rem; color: #333;">
-        Associate PM Intern | ClickUp workflows | Tool evaluations & final delivery.
-      </p>
-      <a href="YOUR_ASSOCIATE_CERT_LINK" target="_blank" style="display: block; margin-top: 10px; text-align: center;">
-        <img src="YOUR_ASSOCIATE_THUMBNAIL_LINK" alt="Associate Internship Certificate" style="width: 100%; border-radius: 4px; box-shadow: 0 0 5px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"/>
-        <p style="color: #3a74d8; font-weight: bold; margin-top: 8px;">View Certificate</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-  <section id="certifications">
-    <h2>🎓 Other Certifications</h2>
-    <ul>
-      <li><a href="https://coursera.org/verify/XYZ" target="_blank">Google Project Management – Coursera</a></li>
-      <li><a href="https://verify.mygreatlearning.com/XYZ" target="_blank">Data Annotation for AI – Great Learning</a></li>
-      <li><a href="https://udemy.com/certificate/XYZ" target="_blank">Technical Writing – Udemy</a></li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <p class="contact">
-      <a href="mailto:kattasushmitha13@gmail.com">📧 Email</a>
-      <a href="https://www.linkedin.com/in/katta-sushmitha" target="_blank">🔗 LinkedIn</a>
-      <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 Sushmitha K • Crafted with 💻 and ☕ using GitHub Pages</p>
-  </footer>
 </body>
 </html>
