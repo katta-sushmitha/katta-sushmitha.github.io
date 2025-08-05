@@ -5,231 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sushmitha K | Project Manager Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XZ56S8WNB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6XZ56S8WNB');
-  </script>
   <style>
-    :root {
-      --primary: #0d47a1;
-      --secondary: #e3f2fd;
-      --accent: #1976d2;
-      --text: #212121;
-      --bg: #f5f5f5;
-      --white: #ffffff;
-    }
-    [data-theme="dark"] {
-      --primary: #90caf9;
-      --secondary: #1e1e1e;
-      --accent: #42a5f5;
-      --text: #e0e0e0;
-      --bg: #121212;
-      --white: #1e1e1e;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
+    html {
       scroll-behavior: smooth;
     }
     body {
-      background: var(--bg);
-      color: var(--text);
-      padding: 2rem;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
     nav {
-      background: var(--primary);
+      background-color: #0d47a1;
       color: white;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    nav h1 {
-      font-size: 1.5rem;
-      animation: slideIn 1s ease forwards;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin-left: 1rem;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #bbdefb;
+      font-weight: 600;
     }
     header {
+      padding: 3rem 1rem;
       text-align: center;
-      padding: 2rem 1rem;
-      animation: fadeIn 1s ease-in-out;
-    }
-    h2 {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      color: var(--primary);
-      animation: popIn 0.6s ease-in;
-    }
-    p.tagline {
-      font-size: 1.2rem;
-      color: #424242;
-      margin-top: 0.5rem;
+      background-color: #e3f2fd;
     }
     section {
-      margin: 2rem auto;
+      padding: 3rem 2rem;
       max-width: 900px;
-      background: var(--white);
-      padding: 1.5rem 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      margin: auto;
     }
-    section:hover {
-      transform: scale(1.01);
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 1rem;
     }
     ul.links {
       list-style: none;
       padding-left: 0;
     }
     ul.links li {
-      margin: 0.8rem 0;
-      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
     }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.6rem 1.5rem;
-      font-size: 1rem;
-      padding-top: 1rem;
-    }
-    .blog-grid {
+    .skills-grid, .blog-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      margin-top: 1rem;
-    }
-    .blog-grid a {
-      display: block;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--text);
-      background: var(--secondary);
-      transition: transform 0.2s ease;
-    }
-    .blog-grid a:hover {
-      background: #d2e3fc;
-      transform: scale(1.02);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    input, textarea {
-      padding: 0.7rem;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-    }
-    button {
-      padding: 0.7rem;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .dark-toggle {
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .testimonial {
-      font-style: italic;
-      border-left: 3px solid var(--accent);
-      padding-left: 1rem;
-      margin: 1rem 0;
-      color: #555;
-    }
-    .certifications {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .certifications img {
-      height: 60px;
-      object-fit: contain;
     }
     .social-links {
-      margin-top: 2rem;
       text-align: center;
+      margin-top: 2rem;
     }
     .social-links a {
       margin: 0 1rem;
       font-size: 1.5rem;
+      color: #1976d2;
     }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes slideIn {
-      from {opacity: 0; transform: translateX(-20px);}
-      to {opacity: 1; transform: translateX(0);}
-    }
-    @keyframes popIn {
-      from {transform: scale(0.95); opacity: 0;}
-      to {transform: scale(1); opacity: 1;}
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+      margin-top: 2rem;
     }
   </style>
-  <script>
-    function toggleTheme() {
-      const current = document.documentElement.getAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-    }
-  </script>
 </head>
 <body>
   <nav>
-    <h1>Sushmitha K</h1>
+    <div><strong>Sushmitha K</strong></div>
     <div>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#blogs">Blogs</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <span class="dark-toggle" onclick="toggleTheme()">🌓 Toggle Theme</span>
     </div>
   </nav>
 
   <header>
-    <h2>👩‍💼 Project Manager | Data Annotator | Content Specialist</h2>
-    <p class="tagline">Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
+    <h1>👩‍💼 Project Manager | Data Annotator | Content Specialist</h1>
+    <p>Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
   </header>
 
   <section id="skills">
@@ -261,7 +122,7 @@
       <a href="https://www.inspirationalmonster.com/post/becoming-an-entrepreneur-101" target="_blank">Becoming an Entrepreneur 101</a>
       <a href="https://www.inspirationalmonster.com/post/marketing-an-overview-from-the-very-beginning" target="_blank">Marketing: A Beginner's Guide</a>
       <a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Self Confidence: A Developing Attitude</a>
-      <a href="https://www.inspirationalmonster.com/post/the-metaverse-all-you-need-to-know-about-it" target="_blank">All You Need to Know About the Metaverse</a>
+      <a href="https://www.inspirationalmonster.com/post/the-metaverse-all-you-need-to-know-about-it" target="_blank">Metaverse: All You Need to Know</a>
       <a href="https://www.inspirationalmonster.com/post/metaverse-and-business" target="_blank">Metaverse & Business</a>
     </div>
   </section>
@@ -269,34 +130,20 @@
   <section id="about">
     <h2>📍 About Me</h2>
     <p>I’m Sushmitha K, a project management enthusiast with hands-on experience in remote collaboration, annotation precision, and content creation. I lead diverse teams, structure workflows, and translate chaos into clarity.</p>
-    <div class="testimonial">“Sushmitha brought exceptional clarity and communication to our cross-cultural, timezone-spread team. She’s a natural leader.” – Peer Intern</div>
-    <div class="testimonial">“Her attention to detail in annotation and content was instrumental for our AI model’s accuracy.” – Internship Supervisor</div>
-    <h3 style="text-align:center; margin-top: 2rem;">📜 Certifications & Badges</h3>
-    <div class="certifications">
-      <img src="https://img.shields.io/badge/Agile%20PM-Certified-blue" alt="Agile PM">
-      <img src="https://img.shields.io/badge/Data%20Annotation-Experienced-green" alt="Data Annotation">
-      <img src="https://img.shields.io/badge/SEO%20Writing-Proficient-brightgreen" alt="SEO">
-    </div>
   </section>
 
   <section id="contact">
     <h2>📬 Contact Me</h2>
-    <form action="https://formspree.io/f/maygnwjk" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Let's collaborate! Email me at <a href="mailto:kattasushmitha13@gmail.com">kattasushmitha13@gmail.com</a></p>
   </section>
 
-  <section class="social-links">
-    <h2>🌐 Connect with Me</h2>
+  <div class="social-links">
     <a href="https://www.linkedin.com/in/katta-sushmitha/" target="_blank">🔗 LinkedIn</a>
     <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
-  </section>
+  </div>
 
   <footer>
-    © 2025 Sushmitha K • Portfolio built with 💙 GitHub Pages • Analytics via Google
+    <p>© 2025 Sushmitha K • Built with 💙 GitHub Pages</p>
   </footer>
 </body>
 </html>
