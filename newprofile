@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sushmitha K | Portfolio</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Intro Section */
+    .intro-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .wave {
+      font-size: 6rem;
+      animation: wave 2s infinite;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0 10px 0;
+    }
+
+    .arrow {
+      font-size: 3rem;
+      cursor: pointer;
+      margin-top: 30px;
+      user-select: none;
+      transition: transform 0.3s ease;
+    }
+
+    .arrow:hover {
+      transform: translateY(10px);
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      15% { transform: rotate(15deg); }
+      30% { transform: rotate(-10deg); }
+      45% { transform: rotate(15deg); }
+      60% { transform: rotate(-10deg); }
+      75% { transform: rotate(15deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Portfolio Main Section */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    nav {
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #1a0dab;
+    }
+
+    a:hover {
+      color: #c71585;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #ccc;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 1rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Intro Section -->
+  <div class="intro-section">
+    <div class="wave">👋</div>
+    <h1>Hey</h1>
+    <a href="#portfolio" class="arrow" title="Go to profile">&#8595;&#8230;</a>
+  </div>
+
+  <!-- Portfolio Content -->
+  <div id="portfolio">
+    <nav>
+      <div><strong>Sushmitha</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="about">
+      <h2>📍 About Me</h2>
+      <p>Hello! I'm Sushmitha, a creatively-driven project coordinator and content specialist with a flair for precision.
+        From data annotation to full-cycle project management, I've led cross-cultural teams and delivered polished outcomes under pressure.
+        I value clarity, structure, and timeliness—and was even nicknamed <strong>“Ms. Busy Pen”</strong> during my content internship
+        for my punctuality and polished drafts. 💼✍️
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>🛠️ Core Skills</h2>
+      <ul>
+        <li><strong>Project Tools:</strong> ClickUp, Notion, Trello, Excel</li>
+        <li><strong>Planning & Coordination:</strong> Gantt Charts, Team Charters, Severity Matrix</li>
+        <li><strong>Annotation & Evaluation:</strong> Label Studio, CVAT, NER, QA Tagging</li>
+        <li><strong>Creative Writing:</strong> SEO Blogs, Technical Docs, Academic Content</li>
+        <li><strong>Soft Skills:</strong> Time-zone collaboration, Documentation, Leadership</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>📂 Projects</h2>
+      <ul>
+        <li><a href="https://www.notion.so/Personal-Project-Management-Template-Sushmitha-K-b401b180eb6146618a5a245fdfef7da5" target="_blank">🧠 Notion – Project Management Tracker</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1uXcl4NNlSeSL-UEu-EvtEiH02pYv2-0W?usp=drive_link" target="_blank">📁 Internship Deliverables</a></li>
+        <li><a href="https://drive.google.com/drive/folders/19bClVWw0yIOFxorPMTwu4BiabaJBEOXR?usp=drive_link" target="_blank">📊 ClickUp Dashboard Screenshots</a></li>
+        <li><a href="https://github.com/katta-sushmitha/Writing-coursework" target="_blank">📝 Writing Coursework Repository</a></li>
+      </ul>
+    </section>
+
+    <section id="blogs">
+      <h2>📝 Published Articles</h2>
+      <ul>
+        <li><a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Self Confidence – A Developing Attitude</a></li>
+        <li><a href="https://www.inspirationalmonster.com/post/becoming-an-entrepreneur-101" target="_blank">Becoming an Entrepreneur</a></li>
+        <li><a href="https://www.inspirationalmonster.com/post/marketing-an-overview-from-the-very-beginning" target="_blank">Marketing – From the Beginning</a></li>
+        <li><a href="https://www.inspirationalmonster.com/post/the-metaverse-all-you-need-to-know-about-it" target="_blank">The Metaverse – All You Need to Know</a></li>
+        <li><a href="https://www.inspirationalmonster.com/post/metaverse-and-business" target="_blank">Metaverse and Business</a></li>
+      </ul>
+    </section>
+
+    <section id="reviews">
+      <h2>🌟 Feedback & Reviews</h2>
+      <blockquote>
+        “Sushmitha displayed exceptional leadership and coordination across a diverse team. Her attention to detail and commitment to timelines is commendable.” — Internship Manager
+      </blockquote>
+      <blockquote>
+        “Her ability to manage tools like ClickUp and Notion while delivering high-quality content made her a standout intern.” — Associate Project Guide
+      </blockquote>
+      <blockquote>
+        “Earned 4 star ratings in both project management internships. 
+        Nicknamed ‘Ms. Busy Pen’ for her punctual content submissions.” — Content Internship Feedback
+      </blockquote>
+    </section>
+
+    <section id="certifications">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1rCKw9cKi5eZxQNWk9eH5T0Q_GVu0h7nW/view?usp=drive_link" target="_blank">🟢 Early Internship Certificate</a></li>
+        <li><a href="https://drive.google.com/file/d/1hCA445_pZzDS6vSg2NBVYiTr7wTh0T_w/view?usp=drive_link" target="_blank">🟣 Associate Internship Certificate</a></li>
+        <li><a href="https://coursera.org/verify/XYZ" target="_blank">Google Project Management – Coursera</a></li>
+        <li><a href="https://verify.mygreatlearning.com/XYZ" target="_blank">Data Annotation for AI – Great Learning</a></li>
+        <li><a href="https://udemy.com/certificate/XYZ" target="_blank">Technical Writing – Udemy</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>
+        <a href="mailto:kattasushmitha13@gmail.com">📧 Email</a> |
+        <a href="https://www.linkedin.com/in/katta-sushmitha" target="_blank">🔗 LinkedIn</a> |
+        <a href="https://www.quora.com/profile/Katta-sushmitha-2" target="_blank">❓ Quora</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Sushmitha K • Built with 💻 and ☕ using GitHub Pages</p>
+    </footer>
+  </div>
+
+</body>
+</html>
