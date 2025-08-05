@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sushmitha K | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Sushmitha K | Project Manager Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <style>
+    :root {
+      --primary: #0d47a1;
+      --secondary: #e3f2fd;
+      --accent: #1976d2;
+      --text: #212121;
+      --bg: #f5f5f5;
+      --white: #ffffff;
+    }
+    [data-theme="dark"] {
+      --primary: #90caf9;
+      --secondary: #1e1e1e;
+      --accent: #42a5f5;
+      --text: #e0e0e0;
+      --bg: #121212;
+      --white: #1e1e1e;
+    }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -16,84 +36,228 @@
       font-family: 'Inter', sans-serif;
     }
     body {
-      background: #f9f9f9;
-      color: #333;
+      background: var(--bg);
+      color: var(--text);
       padding: 2rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    nav h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
     }
     header {
       text-align: center;
-      padding: 2rem 0;
-    }
-    header img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-    }
-    p.tagline {
-      font-size: 1.1rem;
-      color: #666;
-    }
-    section {
-      margin: 2rem 0;
+      padding: 2rem 1rem;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       margin-bottom: 1rem;
+      text-align: center;
+      color: var(--primary);
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      color: #424242;
+      margin-top: 0.5rem;
+    }
+    section {
+      margin: 2rem auto;
+      max-width: 900px;
+      background: var(--white);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     ul.links {
       list-style: none;
+      padding-left: 0;
     }
     ul.links li {
-      margin: 0.5rem 0;
+      margin: 0.8rem 0;
+      font-size: 1.05rem;
     }
     a {
-      color: #0077cc;
+      color: var(--accent);
       text-decoration: none;
       font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
     }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem 1.5rem;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .blog-grid a {
+      display: block;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--secondary);
+    }
+    .blog-grid a:hover {
+      background: #d2e3fc;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.7rem;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      padding: 0.7rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .dark-toggle {
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
     footer {
       text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #777;
+    }
+    .testimonial {
+      font-style: italic;
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #555;
+    }
+    .certifications {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .certifications img {
+      height: 60px;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://github.com/katta-sushmitha/Writing-coursework/assets/your-banner.png" alt="Banner">
+  <nav>
     <h1>Sushmitha K</h1>
-    <p class="tagline">Organize 📋 | Annotate 🧠 | Execute 🚀</p>
+    <div>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <span class="dark-toggle" onclick="toggleTheme()">🌓 Toggle Theme</span>
+    </div>
+  </nav>
+
+  <header>
+    <h2>👩‍💼 Project Manager | Data Annotator | Content Specialist</h2>
+    <p class="tagline">Organize 🗂️ | Annotate 🧠 | Execute 🚀</p>
   </header>
 
-  <section>
+  <section id="skills">
+    <h2>🛠️ Skills & Tools</h2>
+    <div class="skills-grid">
+      <div><strong>📋 Project Management:</strong> Notion, ClickUp, Trello</div>
+      <div><strong>📈 Planning:</strong> Gantt Charts, Task Timelines</div>
+      <div><strong>🧠 Annotation:</strong> Label Studio, CVAT, Prodigy</div>
+      <div><strong>🏷️ Methods:</strong> NER, QA, Text Tagging</div>
+      <div><strong>🖊️ Writing:</strong> SEO, Academic, Technical, Blog</div>
+      <div><strong>🎨 Creative:</strong> Canva, Figma, Markdown</div>
+    </div>
+  </section>
+
+  <section id="projects">
     <h2>🚀 Featured Projects</h2>
     <ul class="links">
       <li><a href="https://www.notion.so/Personal-Project-Management-Template-Sushmitha-K-b401b180eb6146618a5a245fdfef7da5" target="_blank">🧠 Notion – Project Management Tracker</a></li>
       <li><a href="https://drive.google.com/drive/folders/1z8lb0ft4ld6uj-nBVRv5LQ2BO_xABYyl?usp=drive_link" target="_blank">📂 Internship Deliverables (Google Drive)</a></li>
       <li><a href="https://github.com/katta-sushmitha/Writing-coursework" target="_blank">📝 Writing Coursework & Blog Samples</a></li>
-      <li><a href="https://drive.google.com/drive/folders/1mQ6qYZHjIlN6ncnUGKjVY4V5sMJyzkbz?usp=drive_link" target="_blank">🖼️ ClickUp Dashboard Screenshots</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1mQ6qYZHjIlN6ncnUGKjVY4V5sMJyzkbz?usp=drive_link" target="_blank">📊 ClickUp Dashboard Screenshots</a></li>
       <li><a href="https://drive.google.com/file/d/1HbKhS0dUkPhMQoHgEEIWG9q3Kz8DguZA/view?usp=sharing" target="_blank">📘 Resume – View or Download</a></li>
     </ul>
   </section>
 
-  <section>
-    <h2>🔗 Connect With Me</h2>
-    <ul class="links">
-      <li><a href="https://www.linkedin.com/in/sushmitha-katta/" target="_blank">🔵 LinkedIn Profile</a></li>
-      <li><a href="https://github.com/katta-sushmitha" target="_blank">🐱 GitHub Profile</a></li>
-    </ul>
+  <section id="blogs">
+    <h2>📝 Popular Blog Posts</h2>
+    <div class="blog-grid">
+      <a href="https://www.inspirationalmonster.com/post/becoming-an-entrepreneur-101" target="_blank">Becoming an Entrepreneur 101</a>
+      <a href="https://www.inspirationalmonster.com/post/marketing-an-overview-from-the-very-beginning" target="_blank">Marketing: A Beginner's Guide</a>
+      <a href="https://www.inspirationalmonster.com/post/self-confidence-a-developing-attitude" target="_blank">Self Confidence: A Developing Attitude</a>
+      <a href="https://www.inspirationalmonster.com/post/the-metaverse-all-you-need-to-know-about-it" target="_blank">All You Need to Know About the Metaverse</a>
+      <a href="https://www.inspirationalmonster.com/post/metaverse-and-business" target="_blank">Metaverse & Business</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>📍 About Me</h2>
+    <p>I’m Sushmitha K, a project management enthusiast with hands-on experience in remote collaboration, annotation precision, and content creation. I lead diverse teams, structure workflows, and translate chaos into clarity.</p>
+    <div class="testimonial">“Sushmitha brought exceptional clarity and communication to our cross-cultural, timezone-spread team. She’s a natural leader.” – Peer Intern</div>
+    <div class="testimonial">“Her attention to detail in annotation and content was instrumental for our AI model’s accuracy.” – Internship Supervisor</div>
+    <h3 style="text-align:center; margin-top: 2rem;">📜 Certifications & Badges</h3>
+    <div class="certifications">
+      <img src="https://img.shields.io/badge/Agile%20PM-Certified-blue" alt="Agile PM">
+      <img src="https://img.shields.io/badge/Data%20Annotation-Experienced-green" alt="Data Annotation">
+      <img src="https://img.shields.io/badge/SEO%20Writing-Proficient-brightgreen" alt="SEO">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/maygnwjk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    © 2025 Sushmitha K • Built with 💙 and Markdown
+    © 2025 Sushmitha K • Portfolio built with 💙 GitHub Pages • Analytics via Google
   </footer>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
 </body>
 </html>
