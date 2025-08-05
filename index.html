@@ -1,4 +1,95 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushmitha's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f7f7f7;
+    }
+
+    /* 👋 Splash Section */
+    #intro {
+      height: 100vh;
+      background-color: #fafafa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    #intro h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    #intro .wave {
+      display: inline-block;
+      animation: waveAnim 2s infinite;
+      transform-origin: 70% 70%;
+    }
+
+    @keyframes waveAnim {
+      0% { transform: rotate(0deg); }
+      15% { transform: rotate(14deg); }
+      30% { transform: rotate(-8deg); }
+      45% { transform: rotate(14deg); }
+      60% { transform: rotate(-4deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    #intro p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .down-arrow {
+      font-size: 2rem;
+      color: #888;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .down-arrow:hover {
+      transform: translateY(5px);
+    }
+
+    /* 🔽 Scroll target placeholder */
+    #main-content {
+      padding-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 👋 Splash Intro Section -->
+<section id="intro">
+  <h1><span class="wave">👋</span> Hey there!</h1>
+  <p>Welcome to my personal portfolio</p>
+  <a href="#main-content" class="down-arrow">⬇️</a>
+</section>
+
+<!-- 🔽 Portfolio Starts Here -->
+<section id="main-content">
+  <!-- Your existing portfolio code begins below this -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
